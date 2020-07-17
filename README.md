@@ -8,24 +8,25 @@
 
 - props
 
-      属性  | 说明      | 类型       | 默认值     |      备注
+      
+| 属性 | 说明 | 类型 | 默认值 | 备注 |
+| --- | --- | --- | --- | --- |
+| isFront1 | 卡片 1 显示卡片的正反面  | Boolean | true |  |
+| isFront2 | 卡片 2 显示卡片的正反面  | Boolean | true |  |
+| isFront3 | 卡片 3 显示卡片的正反面 | Boolean | true |  |
+| animationData1 | 卡片 1 的左滑动右滑动动画 | Object | {} |  |
+| animationData2 | 卡片 2 的左滑动右滑动动画 | Object | {} |  |
+| animationData3 | 卡片 3 的左滑动右滑动动画 | Object | {} |  |
+| ballTop1 | 卡片 1 距离顶部的距离 | Number | 90 | 根据项目需求自己更改距离 |
+| ballTop2 | 卡片 2 距离顶部的距离 | Number | 75 |  |
+| ballTop3 | 卡片 3 距离顶部的距离 | Number | 60 |  |
+| ballWidth1 | 卡片 1 的宽度 | Number | 680 | 根据项目需求自己更改宽度 |
+| ballWidth2 | 卡片 2 的宽度 | Number | 640 |  |
+| ballWidth3 | 卡片 3 的宽度 | Number | 605 |  |
+| index1 | 卡片 1 的 z-index 层级 | Number | 3 | 层级高的在最外层 |
+| index2 | 卡片 2 的 z-index 层级 | Number | 2 |  |
+| Index3 | 卡片 3 的 z-index 层级 | Number | 1 |  |
 
-      ---------- |----------|-----------|-------------|-------
-      isFront1 | 卡片 1 显示卡片的正反面 | Boolean | true
-      isFront2 | 卡片 2 显示卡片的正反面 | Boolean | true
-      isFront3 | 卡片 3 显示卡片的正反面 | Boolean | true
-      animationData1 | 卡片 1 的左滑动右滑动动画 | Object | {}
-      animationData2 | 卡片 2 的左滑动右滑动动画 | Object | {}
-      animationData3 | 卡片 3 的左滑动右滑动动画 | Object | {}
-      ballTop1 | 卡片 1 距离顶部的距离 | Number | 90 |根据项目需求自己更改距离
-      ballTop2 | 卡片 2 距离顶部的距离 | Number | 75 |
-      ballTop3 | 卡片 3 距离顶部的距离 | Number | 60 |
-      ballWidth1 | 卡片 1 的宽度 | Number | 680 |根据项目需求自己更改宽度
-      ballWidth2 | 卡片 2 的宽度 | Number | 640 |
-      ballWidth3 | 卡片 3 的宽度 | Number | 605 |
-      index1 | 卡片 1 的 z-index 层级 | Number | 3 |层级高的在最外层
-      index2 | 卡片 2 的 z-index 层级 | Number | 2 |
-      index3 | 卡片 3 的 z-index 层级 | Number | 1 |
 
 - events
 
