@@ -1,41 +1,52 @@
 ##小程序手势滑动卡片的使用说明
+
 #### 概要
-基于小程序Animation的二次开发
+
+基于小程序 Animation 的二次开发
+
 #### 文档
-* props
 
-    属性  | 说明      | 类型       | 默认值 | 备注   
----------- |----------|-----------|-------------|-------
-isFront1     | 卡片1显示卡片的正反面           |  Boolean            | true
-isFront2     | 卡片2显示卡片的正反面           |  Boolean            | true
-isFront3     | 卡片3显示卡片的正反面           |  Boolean            | true
-animationData1   | 卡片1的左滑动右滑动动画           |  Object          | {}
-animationData2   | 卡片2的左滑动右滑动动画           |  Object          | {}
-animationData3   | 卡片3的左滑动右滑动动画           |  Object          | {}
-ballTop1       | 卡片1距离顶部的距离             |   Number          | 90 |根据项目需求自己更改距离
-ballTop2       | 卡片2距离顶部的距离             |   Number          | 75 |
-ballTop3      | 卡片3距离顶部的距离             |   Number          | 60 |
-ballWidth1       | 卡片1的宽度             |   Number          | 680 |根据项目需求自己更改宽度
-ballWidth2       | 卡片2的宽度             |   Number          | 640 |
-ballWidth3      | 卡片3的宽度             |   Number          | 605 |
-index1       | 卡片1的z-index层级             |   Number          | 3 |层级高的在最外层
-index2      | 卡片2的z-index层级             |   Number          | 2 |
-index3      | 卡片3的z-index层级             |   Number          | 1 |
-* events
+- props
 
-    事件名        | 说明          | 参数
-    ------------ | ------------ | -------------
-    touchstart1     | 卡片1手指触摸动作开始 | (起始点的坐标X、起始点的坐标Y)
-    touchend1       | 卡片1手指触摸后移动   | (手势滑动距离、手势滑动方向)
-touchstart2     | 卡片2手指触摸动作开始 | (起始点的坐标X、起始点的坐标Y)
-    touchend2       | 卡片2手指触摸后移动   | (手势滑动距离、手势滑动方向)
-    touchstart3     | 卡片3手指触摸动作开始 | (起始点的坐标X、起始点的坐标Y)
-    touchend3       | 卡片3手指触摸后移动   | (手势滑动距离、手势滑动方向)
+      属性  | 说明      | 类型       | 默认值     |      备注
+
+  ---------- |----------|-----------|-------------|-------
+
+isFront1 | 卡片 1 显示卡片的正反面 | Boolean | true
+isFront2 | 卡片 2 显示卡片的正反面 | Boolean | true
+isFront3 | 卡片 3 显示卡片的正反面 | Boolean | true
+animationData1 | 卡片 1 的左滑动右滑动动画 | Object | {}
+animationData2 | 卡片 2 的左滑动右滑动动画 | Object | {}
+animationData3 | 卡片 3 的左滑动右滑动动画 | Object | {}
+ballTop1 | 卡片 1 距离顶部的距离 | Number | 90 |根据项目需求自己更改距离
+ballTop2 | 卡片 2 距离顶部的距离 | Number | 75 |
+ballTop3 | 卡片 3 距离顶部的距离 | Number | 60 |
+ballWidth1 | 卡片 1 的宽度 | Number | 680 |根据项目需求自己更改宽度
+ballWidth2 | 卡片 2 的宽度 | Number | 640 |
+ballWidth3 | 卡片 3 的宽度 | Number | 605 |
+index1 | 卡片 1 的 z-index 层级 | Number | 3 |层级高的在最外层
+index2 | 卡片 2 的 z-index 层级 | Number | 2 |
+index3 | 卡片 3 的 z-index 层级 | Number | 1 |
+
+- events
+
+      事件名        | 说明          | 参数
+      ------------ | ------------ | -------------
+      touchstart1     | 卡片1手指触摸动作开始 | (起始点的坐标X、起始点的坐标Y)
+      touchend1       | 卡片1手指触摸后移动   | (手势滑动距离、手势滑动方向)
+
+  touchstart2 | 卡片 2 手指触摸动作开始 | (起始点的坐标 X、起始点的坐标 Y)
+  touchend2 | 卡片 2 手指触摸后移动 | (手势滑动距离、手势滑动方向)
+  touchstart3 | 卡片 3 手指触摸动作开始 | (起始点的坐标 X、起始点的坐标 Y)
+  touchend3 | 卡片 3 手指触摸后移动 | (手势滑动距离、手势滑动方向)
 
 ### 使用示例
+
 ##### 说明
+
 `translateXX > 0`说明向右滑，`translateXX < 0`说明向左滑
-* 卡片1第一次滑动触发动画
+
+- 卡片 1 第一次滑动触发动画
 
 ```
 Animation1: function (translateXX) {
@@ -77,7 +88,8 @@ Animation1: function (translateXX) {
     }, 300)
 }
 ```
-* 卡片1手指触摸事件
+
+- 卡片 1 手指触摸事件
 
 ```
   touchstart1: function (event) {
@@ -85,7 +97,8 @@ Animation1: function (translateXX) {
         touchDotY = event.touches[0].pageY // 起始点的坐标Y
   },
 ```
-* 卡片1移动结束处理动画
+
+- 卡片 1 移动结束处理动画
 
 ```
 touchend1: function (event) {
